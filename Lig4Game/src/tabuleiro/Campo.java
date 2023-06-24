@@ -12,10 +12,16 @@ public class Campo {
         return this.ficha;
     }
     
+    // isso provavelmente é um set (vou confirmar antes de mudar o nome)
     public void mudarFicha(int jogador) {
-    	if (this.ficha == 0) {
-    		this.ficha = jogador;
-    	} 
+    	this.ficha = jogador;
     }
     
+    public boolean verificarCampo() {
+    	if (this.ficha == 0) {
+    		return false;
+    	} else {
+    		return true;
+    	}
+    }
 }
