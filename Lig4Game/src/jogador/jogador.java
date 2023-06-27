@@ -5,6 +5,12 @@ public class jogador {
     private String cor;
     private int pontos;
     private String categoria;  
+    
+    public jogador(String n, String c, int p) {
+        this.setNome(n);
+        this.setCor(c);
+        this.setPontos(p);
+    }
 
     public String getNome() {
         return this.nome;
@@ -23,15 +29,15 @@ public class jogador {
     }
 
     public int getPontos() {
+    	this.setCategoria();
         return this.pontos;
-        this.setCategoria();
     }
     
     public void setPontos(int p) {
         this.pontos = p;
     }
 
-    public void getCategoria() {
+    public String getCategoria() {
         return this.categoria;
     }
 
@@ -52,16 +58,4 @@ public class jogador {
         System.out.println("Pontos:" + this.pontos);
         System.out.println(this.categoria);
     }
-
-    public Jogador(String n, String c, int p) {
-        this.setNome(n);
-        this.setCor(c);
-        this.setPontos(p);
-    }
-
-    jogador j1 = new jogador("Flávio", "Amarelo", 1);
-    j1.status();
-
-    jogador j2 = new jogador("Luana", "Verde", 2);
-    j2.status();
 }
