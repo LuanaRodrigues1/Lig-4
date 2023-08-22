@@ -1,20 +1,11 @@
 package tabuleiro;
 
 import java.awt.Color;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.net.URL;
-
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
-
-import exceptions.AtributoValorInvalidoException;
 import jogador.Bot;
 import jogador.Jogador;
 

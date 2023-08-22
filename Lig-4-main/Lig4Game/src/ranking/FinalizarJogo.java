@@ -5,27 +5,21 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-
 import interfaceGrafica.ElementosVisuais;
 import jogador.Bot;
 import jogador.Jogador;
-import personalizar.EscolherNumeroJogadores;
 import personalizar.PersonalizarJogadores;
 import tabuleiro.Lig4Turbo;
 import tabuleiro.Lig4TurboMaluco;
 import tabuleiro.ModoTradicionalpara2Jogadores;
-
 
 public class FinalizarJogo extends JFrame {
     public FinalizarJogo(Jogador jogador1, Jogador jogador2, Bot bot) {	        

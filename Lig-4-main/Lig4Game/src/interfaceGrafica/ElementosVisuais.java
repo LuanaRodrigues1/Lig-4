@@ -1,18 +1,12 @@
 package interfaceGrafica;
 
 import java.awt.Color;
-
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 public class ElementosVisuais {
 	public static void criarJanela(JFrame janela, String titulo) {

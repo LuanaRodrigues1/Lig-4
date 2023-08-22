@@ -1,20 +1,9 @@
 package tabuleiro;
 
 import java.awt.Color;
-
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
-
-import javax.swing.BorderFactory;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.border.Border;
-
 import exceptions.AtributoValorInvalidoException;
-import exceptions.ColunaInvalidaExcepition;
 import jogador.Bot;
 import jogador.Jogador;
 
@@ -114,8 +103,4 @@ public class Lig4Turbo extends Tabuleiro {
 
 	@Override
 	public void keyReleased(KeyEvent e) {}
-
-	@Override
-	public void posicionarFicha(int coluna) throws AtributoValorInvalidoException {
-	}
 }

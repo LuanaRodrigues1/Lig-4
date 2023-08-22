@@ -1,26 +1,18 @@
 package tabuleiro;
 
-
 import javax.swing.*;
-
 import javax.swing.border.*;
-import interfaceGrafica.ElementosVisuais;
 import jogador.Bot;
 import jogador.Jogador;
 import personalizar.PersonalizarJogadores;
-import ranking.ArquivoCsv;
 import ranking.FinalizarJogo;
 import java.awt.*;
 import javax.swing.border.Border;
-
 import exceptions.AtributoValorInvalidoException;
 import exceptions.ColunaInvalidaExcepition;
-
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.Random;
-
 
 public abstract class Tabuleiro extends JFrame implements KeyListener, TabuleiroInterface {
 	// Atributos para o próprio tabuleiro
@@ -87,6 +79,7 @@ public abstract class Tabuleiro extends JFrame implements KeyListener, Tabuleiro
         setVisible(true);
     }
 
+    @Override
     public void posicionarFicha(int coluna, Jogador jogador1, Jogador jogador2) throws AtributoValorInvalidoException {
         int linha = 6;
         boolean local = tabuleiro[linha][coluna].verificarCampo();
@@ -139,7 +132,7 @@ public abstract class Tabuleiro extends JFrame implements KeyListener, Tabuleiro
         }
     }
     
-    
+    @Override
     public void posicionarFicha(int coluna, Jogador jogador1, Bot bot) throws AtributoValorInvalidoException {
         int linha = 6;
         boolean local = tabuleiro[linha][coluna].verificarCampo();
@@ -389,7 +382,7 @@ public abstract class Tabuleiro extends JFrame implements KeyListener, Tabuleiro
                         FinalizarJogo telaVencedor = new FinalizarJogo(jogador1, jogador2, bot);
                         telaVencedor.setVisible(true);
                         dispose();
-                	}
+                	} 
                     try {
                         if (jogador2 == null) {
                         	posicionarFicha(posicaoBolinha - 1, jogador1, bot);

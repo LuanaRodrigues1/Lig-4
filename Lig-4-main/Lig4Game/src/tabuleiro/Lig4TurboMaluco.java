@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.util.Random;
-
 import exceptions.AtributoValorInvalidoException;
 import jogador.Bot;
 import jogador.Jogador;
@@ -126,8 +125,5 @@ public class Lig4TurboMaluco extends Tabuleiro {
 
 	@Override
 	public void keyReleased(KeyEvent e) {}
-
-	@Override
-	public void posicionarFicha(int coluna) throws AtributoValorInvalidoException {}
 }
 
